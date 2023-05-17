@@ -49,7 +49,7 @@ const { t } = useI18n()
 const { createMessage } = useMessage()
 const [registerModal, { openModal }] = useModal()
 const [registerTable, { reload }] = useTable({
-  title: '租户套餐列表',
+  title: 'Practitioner package list',
   api: getTenantPackagePage,
   columns,
   formConfig: { labelWidth: 120, schemas: searchFormSchema },

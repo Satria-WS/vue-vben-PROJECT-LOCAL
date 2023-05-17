@@ -25,7 +25,7 @@
               },
               {
                 icon: IconEnum.EDIT,
-                label: '重置密码',
+                label: 'reset Password',
                 auth: 'system:user:update-password',
                 onClick: handleResetPwd.bind(null, record)
               },

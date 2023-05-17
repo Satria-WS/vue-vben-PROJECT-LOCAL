@@ -73,12 +73,12 @@
     </div>
 
     <!-- 萌新必读 -->
-    <Divider class="enter-x">萌新必读</Divider>
+    <Divider class="enter-x">Mengxin must read</Divider>
     <div class="flex justify-evenly enter-x" :class="`${prefixCls}-sign-in-way`">
-      <Button href="https://doc.iocoder.cn/" target="_blank">📚开发指南</Button>
-      <Button href="https://doc.iocoder.cn/video/" target="_blank" style="padding-left: 10px">🔥视频教程</Button>
-      <Button href="https://www.iocoder.cn/Interview/good-collection/" target="_blank" style="padding-left: 10px">⚡面试手册</Button>
-      <Button href="http://static.yudao.iocoder.cn/mp/xinyu370.jpeg" target="_blank" style="padding-left: 10px">🤝外包咨询</Button>
+      <Button href="https://doc.iocoder.cn/" target="_blank">📚 Development Guide</Button>
+      <Button href="https://doc.iocoder.cn/video/" target="_blank" style="padding-left: 10px">🔥 Video tutorial</Button>
+      <Button href="https://www.iocoder.cn/Interview/good-collection/" target="_blank" style="padding-left: 10px">⚡ Interview manual</Button>
+      <Button href="http://static.yudao.iocoder.cn/mp/xinyu370.jpeg" target="_blank" style="padding-left: 10px">🤝 Outsourcing consultation</Button>
     </div>
   </Form>
   <Verify ref="verify" mode="pop" :captchaType="captchaType" :imgSize="{ width: '400px', height: '200px' }" @success="handleLogin" />
@@ -127,7 +127,7 @@ const verify = ref()
 const captchaType = ref('blockPuzzle') // blockPuzzle 滑块 clickWord 点击文字
 
 const formData = reactive({
-  tenantName: '芋道源码',
+  tenantName: 'Taro source code',
   username: 'admin',
   password: 'admin123',
   captchaVerification: ''

@@ -76,7 +76,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '状态',
+    label: 'state',
     field: 'status',
     component: 'Select',
     componentProps: {
@@ -94,25 +94,25 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '组名',
+    label: 'group name',
     field: 'name',
     required: true,
     component: 'Input'
   },
   {
-    label: '描述',
+    label: 'describe',
     field: 'description',
     required: true,
     component: 'Input'
   },
   {
-    label: '成员',
+    label: 'member',
     field: 'memberUserIds',
     required: true,
     component: 'ApiTransfer',
@@ -124,7 +124,7 @@ export const formSchema: FormSchema[] = [
     }
   },
   {
-    label: '状态',
+    label: 'state',
     field: 'status',
     component: 'Select',
     defaultValue: 0,

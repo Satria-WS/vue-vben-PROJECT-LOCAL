@@ -1,6 +1,6 @@
 export default {
-  login: '登录',
-  errorLogList: '错误日志列表',
-  profile: '个人中心',
-  notifyMessage: '站内信'
+  login: 'Log in',
+  errorLogList: 'Error log list',
+  profile: 'Personal center',
+  notifyMessage: 'On -site letter'
 }

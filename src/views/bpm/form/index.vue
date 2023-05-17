@@ -41,7 +41,7 @@ const { t } = useI18n()
 const { createMessage } = useMessage()
 
 const [registerTable, { reload }] = useTable({
-  title: '流程表单列表',
+  title: 'Paragraph list list',
   api: getFormPage,
   columns,
   formConfig: { labelWidth: 120, schemas: searchFormSchema },

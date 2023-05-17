@@ -12,7 +12,7 @@ import { columns, searchFormSchema } from './leave.data'
 const { t } = useI18n()
 
 const [registerTable] = useTable({
-  title: '请假列表',
+  title: 'Demolition list',
   api: getLeavePage,
   columns,
   formConfig: { labelWidth: 120, schemas: searchFormSchema },
