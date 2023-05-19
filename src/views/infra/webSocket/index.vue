@@ -19,7 +19,7 @@
         <p class="text-lg font-medium mt-4">设置</p>
         <hr class="my-4" />
 
-        <InputTextArea placeholder="需要发送到服务器的内容" :disabled="!getIsOpen" v-model:value="state.sendValue" allowClear />
+        <InputTextArea placeholder="Need to send to the server content" :disabled="!getIsOpen" v-model:value="state.sendValue" allowClear />
 
         <a-button type="primary" block class="mt-4" :disabled="!getIsOpen" @click="handlerSend"> 发送 </a-button>
       </div>

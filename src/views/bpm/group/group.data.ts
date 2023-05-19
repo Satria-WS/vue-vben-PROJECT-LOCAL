@@ -70,7 +70,7 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '组名',
+    label: 'group name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
@@ -85,7 +85,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '创建时间',
+    label: 'Creation time',
     field: 'createTime',
     component: 'RangePicker',
     colProps: { span: 8 }

@@ -42,19 +42,19 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '流程标识',
+    label: 'Process logo',
     field: 'key',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '流程名称',
+    label: 'Process name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '流程分类',
+    label: 'Process classification',
     field: 'category',
     component: 'Select',
     componentProps: {
@@ -66,27 +66,27 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '流程标识',
+    label: 'Process logo',
     field: 'key',
     required: true,
     component: 'Input',
     dynamicDisabled: ({ values }) => !!values.id
   },
   {
-    label: '流程名称',
+    label: 'Process name',
     field: 'name',
     required: true,
     component: 'Input',
     dynamicDisabled: ({ values }) => !!values.id
   },
   {
-    label: '流程分类',
+    label: 'Process classification',
     field: 'category',
     component: 'Select',
     componentProps: {
@@ -94,7 +94,7 @@ export const formSchema: FormSchema[] = [
     }
   },
   {
-    label: '流程描述',
+    label: 'Process description',
     field: 'description',
     component: 'InputTextArea'
   }

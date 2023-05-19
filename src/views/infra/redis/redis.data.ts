@@ -4,60 +4,60 @@ import { DICT_TYPE } from '@/utils/dict'
 
 export const baseInfoSchema: DescItem[] = [
   {
-    label: 'Redis版本',
+    label: 'Redis version',
     field: 'redis_version'
   },
   {
-    label: '运行模式',
+    label: 'Run mode',
     field: 'redis_mode',
     render: (val) => {
       return val === 'standalone' ? '单机' : '集群'
     }
   },
   {
-    label: '端口',
+    label: 'port',
     field: 'tcp_port'
   },
   {
-    label: '客户端数',
+    label: 'Number of clients',
     field: 'connected_clients'
   },
   {
-    label: '运行时间(天)',
+    label: 'operation hours(天)',
     field: 'uptime_in_days'
   },
   {
-    label: '使用内存',
+    label: 'Use memory',
     field: 'used_memory_human'
   },
   {
-    label: '使用CPU',
+    label: 'CPU',
     field: 'tcp_port',
     render: (val) => {
       return parseFloat(val).toFixed(2)
     }
   },
   {
-    label: '内存配置',
+    label: 'Memory configuration',
     field: 'maxmemory_human'
   },
   {
-    label: 'AOF是否开启',
+    label: 'Whether AOF opens',
     field: 'maxmemory_human',
     render: (val) => {
       return val === '0' ? '否' : '是'
     }
   },
   {
-    label: 'RDB是否成功',
+    label: 'Is RDB successful',
     field: 'rdb_last_bgsave_status'
   },
   {
-    label: 'Key数量',
+    label: 'Quantity',
     field: 'expired_keys'
   },
   {
-    label: '网络入口/出口',
+    label: 'Network entrance/exit',
     field: 'instantaneous_input_kbps',
     render: (val, data) => {
       console.info(val)
@@ -102,13 +102,13 @@ export const tableSchema: BasicColumn[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '缓存键名',
+    label: 'Cache key name',
     field: 'cacheForm.key',
     dynamicDisabled: true,
     component: 'Input'
   },
   {
-    label: '缓存内容',
+    label: 'Cache content',
     field: 'cacheForm.value',
     dynamicDisabled: true,
     component: 'InputTextArea'

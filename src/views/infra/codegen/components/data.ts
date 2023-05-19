@@ -13,27 +13,27 @@ async function getDictTypeOptions() {
 
 export const basicInfoSchemas: FormSchema[] = [
   {
-    label: '基本信息',
+    label: 'Basic Information',
     field: 'basicInfo',
     component: 'Divider',
     colProps: { span: 24 }
   },
   {
-    label: '表名称',
+    label: 'Table name',
     field: 'tableName',
     required: true,
     component: 'Input',
     colProps: { span: 12 }
   },
   {
-    label: '表描述',
+    label: 'Table description',
     field: 'tableComment',
     required: true,
     component: 'Input',
     colProps: { span: 12 }
   },
   {
-    label: '实体类名称',
+    label: 'Sports name',
     field: 'className',
     required: true,
     helpMessage: '默认去除表名的前缀。如果存在重复，则需要手动添加前缀，避免 MyBatis 报 Alias 重复的问题。',
@@ -41,20 +41,20 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '作者',
+    label: 'author',
     field: 'author',
     required: true,
     component: 'Input',
     colProps: { span: 12 }
   },
   {
-    label: '生成信息',
+    label: 'Generate information',
     field: 'genInfo',
     component: 'Divider',
     colProps: { span: 24 }
   },
   {
-    label: '生成模板',
+    label: 'Generate template',
     field: 'templateType',
     required: true,
     component: 'Select',
@@ -64,7 +64,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '前端类型',
+    label: 'Front -end type',
     field: 'frontType',
     required: true,
     component: 'Select',
@@ -74,7 +74,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '生成场景',
+    label: 'Generation scene',
     field: 'scene',
     required: true,
     component: 'Select',
@@ -84,7 +84,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '模块名',
+    label: 'Module name',
     field: 'moduleName',
     required: true,
     helpMessage: '模块名，即一级目录，例如 system、infra、tool 等等',
@@ -92,7 +92,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '业务名',
+    label: 'Business name',
     field: 'businessName',
     required: true,
     component: 'Input',
@@ -100,7 +100,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '类名称',
+    label: 'Class name',
     field: 'className',
     required: true,
     component: 'Input',
@@ -108,7 +108,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '类描述',
+    label: 'Classification',
     field: 'classComment',
     required: true,
     component: 'Input',
@@ -116,7 +116,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '上级菜单',
+    label: 'Superior menu',
     field: 'parentMenuId',
     required: true,
     component: 'ApiTreeSelect',
@@ -132,7 +132,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '自定义路径',
+    label: 'Custom path',
     field: 'genPath',
     component: 'Input',
     helpMessage: '填写磁盘绝对路径，若不填写，则生成到当前Web项目下',
@@ -141,7 +141,7 @@ export const basicInfoSchemas: FormSchema[] = [
     colProps: { span: 12 }
   },
   {
-    label: '备注',
+    label: 'Remark',
     field: 'remark',
     component: 'InputTextArea',
     colProps: { span: 24 }
@@ -297,15 +297,15 @@ export const columns: BasicColumn[] = [
         editComponent: 'Select',
         editComponentProps: {
           options: [
-            { label: '文本框', value: 'input' },
-            { label: '文本域', value: 'textarea' },
-            { label: '下拉框', value: 'select' },
-            { label: '单选框', value: 'radio' },
-            { label: '复选框', value: 'checkbox' },
-            { label: '日期控件', value: 'datetime' },
-            { label: '图片上传', value: 'imageUpload' },
-            { label: '文件上传', value: 'fileUpload' },
-            { label: '富文本控件', value: 'editor' }
+            { label: 'Text box', value: 'input' },
+            { label: 'Text domain', value: 'textarea' },
+            { label: 'Drop -down box', value: 'select' },
+            { label: 'Single box', value: 'radio' },
+            { label: 'Check box', value: 'checkbox' },
+            { label: 'Date control', value: 'datetime' },
+            { label: 'upload picture', value: 'imageUpload' },
+            { label: 'File Upload', value: 'fileUpload' },
+            { label: 'Rich text control', value: 'editor' }
           ]
         },
         width: 60

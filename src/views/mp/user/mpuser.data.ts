@@ -51,7 +51,7 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '公众号',
+    label: 'No public',
     field: 'accountId',
     component: 'ApiSelect',
     componentProps: {
@@ -62,13 +62,13 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '用户标识',
+    label: 'User logo',
     field: 'openid',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '昵称',
+    label: 'Nick name',
     field: 'nickname',
     component: 'Input',
     colProps: { span: 8 }
@@ -77,25 +77,25 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '昵称',
+    label: 'Nick name',
     field: 'nickname',
     required: true,
     component: 'Input'
   },
   {
-    label: '备注',
+    label: 'Remark',
     field: 'remark',
     required: true,
     component: 'Input'
   },
   {
-    label: '标签',
+    label: 'Label',
     field: 'tagIds',
     helpMessage: '在微信公众平台（mp.weixin.qq.com）的菜单 [设置与开发 - 公众号设置 - 基本设置] 中能找到「开发者ID(AppID)」',
     required: true,

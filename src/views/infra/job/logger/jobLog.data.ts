@@ -56,25 +56,25 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '处理器的名字',
+    label: 'The name of the processor',
     field: 'handlerName',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '开始执行时间',
+    label: 'Start execution time',
     field: 'beginTime',
     component: 'DatePicker',
     colProps: { span: 8 }
   },
   {
-    label: '结束执行时间',
+    label: 'End execution time',
     field: 'endTime',
     component: 'DatePicker',
     colProps: { span: 8 }
   },
   {
-    label: '任务状态',
+    label: 'Mission status',
     field: 'status',
     component: 'Select',
     componentProps: {
@@ -83,7 +83,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '处理器的名字',
+    label: 'The name of the processor',
     field: 'handlerName',
     component: 'Input',
     colProps: { span: 8 }
@@ -92,48 +92,48 @@ export const searchFormSchema: FormSchema[] = [
 
 export const descSchema: DescItem[] = [
   {
-    label: '日志编号',
+    label: 'Log number',
     field: 'id'
   },
   {
-    label: '任务编号',
+    label: 'Task number',
     field: 'jobId'
   },
   {
-    label: '处理器的名字',
+    label: 'The name of the processor',
     field: 'handlerName'
   },
   {
-    label: '处理器的参数',
+    label: 'Parameters of the processor',
     field: 'handlerParam'
   },
   {
-    label: '第几次执行',
+    label: 'How many times are executed',
     field: 'executeIndex'
   },
   {
-    label: '执行时间',
+    label: 'execution time',
     field: 'beginTime',
     render: (data) => {
       return useRender.renderDate(data.beginTime) + ' ~ ' + useRender.renderDate(data.endTime)
     }
   },
   {
-    label: '执行时长',
+    label: 'Execute time',
     field: 'duration',
     render: (curVal) => {
       return useRender.renderText(curVal, ' 毫秒')
     }
   },
   {
-    label: '任务状态',
+    label: 'Mission status',
     field: 'status',
     render: (curVal) => {
       return useRender.renderDict(curVal, DICT_TYPE.INFRA_JOB_LOG_STATUS)
     }
   },
   {
-    label: '执行结果',
+    label: 'Results of the',
     field: 'duration',
     render: (curVal) => {
       return useRender.renderText(curVal, ' result')

@@ -106,7 +106,7 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '公众号',
+    label: 'No public',
     field: 'accountId',
     component: 'ApiSelect',
     componentProps: {
@@ -117,7 +117,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '消息类型',
+    label: 'Message type',
     field: 'type',
     component: 'Select',
     componentProps: {
@@ -126,13 +126,13 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '用户标识',
+    label: 'User logo',
     field: 'openid',
     component: 'Select',
     colProps: { span: 8 }
   },
   {
-    label: '创建时间',
+    label: 'Creation time',
     field: 'createTime',
     component: 'RangePicker',
     colProps: { span: 8 }

@@ -1,5 +1,5 @@
 <template>
-  <Select v-model:value="account.id" placeholder="请选择公众号" class="!w-240px" @change="onChanged">
+  <Select v-model:value="account.id" placeholder="Please select the public account" class="!w-240px" @change="onChanged">
     <SelectOption v-for="item in accountList" :key="item.id" :label="item.name" :value="item.id" />
   </Select>
 </template>

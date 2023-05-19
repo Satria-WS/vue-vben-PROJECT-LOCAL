@@ -10,9 +10,9 @@
         <template v-if="column.key === 'action'">
           <TableAction
             :actions="[
-              { icon: IconEnum.PREVIEW, label: '预览', auth: 'infra:codegen:preview', onClick: handlePreview.bind(null, record) },
+              { icon: IconEnum.PREVIEW, label: 'Preview', auth: 'infra:codegen:preview', onClick: handlePreview.bind(null, record) },
               { icon: IconEnum.EDIT, label: t('action.edit'), auth: 'infra:codegen:update', onClick: handleEditTable.bind(null, record) },
-              { icon: IconEnum.DOWNLOAD, label: '生成', auth: 'infra:codegen:download', onClick: handleGenTable.bind(null, record) },
+              { icon: IconEnum.DOWNLOAD, label: 'generate', auth: 'infra:codegen:download', onClick: handleGenTable.bind(null, record) },
               {
                 icon: IconEnum.RESET,
                 label: t('action.sync'),

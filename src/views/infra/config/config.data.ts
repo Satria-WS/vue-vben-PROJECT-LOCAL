@@ -60,19 +60,19 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '参数名称',
+    label: 'parameter name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '参数键名',
+    label: 'Parameter key name',
     field: 'key',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '系统内置',
+    label: 'Built -in',
     field: 'type',
     component: 'Select',
     componentProps: {
@@ -81,7 +81,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '创建时间',
+    label: 'Creation time',
     field: 'createTime',
     component: 'RangePicker',
     colProps: { span: 8 }
@@ -90,49 +90,49 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '参数分类',
+    label: 'Parameter classification',
     field: 'category',
     required: true,
     component: 'Input'
   },
   {
-    label: '参数名称',
+    label: 'parameter name',
     field: 'name',
     required: true,
     component: 'Input'
   },
   {
-    label: '参数键名',
+    label: 'Parameter key name',
     field: 'key',
     required: true,
     component: 'Input'
   },
   {
-    label: '参数键值',
+    label: 'Parameter key value',
     field: 'value',
     required: true,
     component: 'Input'
   },
   {
-    label: '是否可见',
+    label: 'Whether it is visible',
     field: 'visible',
     component: 'RadioGroup',
     defaultValue: 0,
     componentProps: {
       options: [
-        { key: true, label: '是', value: true },
-        { key: false, label: '否', value: false }
+        { key: true, label: 'yes', value: true },
+        { key: false, label: 'no', value: false }
       ]
     }
   },
   {
-    label: '备注',
+    label: 'Remark',
     field: 'remark',
     component: 'InputTextArea'
   }

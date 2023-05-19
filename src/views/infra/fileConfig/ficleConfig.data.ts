@@ -45,13 +45,13 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '配置名',
+    label: 'Configuration name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '存储器',
+    label: 'Memory',
     field: 'storage',
     component: 'Select',
     componentProps: {
@@ -60,7 +60,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '创建时间',
+    label: 'Creation time',
     field: 'createTime',
     component: 'RangePicker',
     colProps: { span: 8 }
@@ -69,19 +69,19 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '配置名',
+    label: 'Configuration name',
     field: 'name',
     required: true,
     component: 'Input'
   },
   {
-    label: '存储器',
+    label: 'Memory',
     field: 'storage',
     component: 'Select',
     required: true,
@@ -91,62 +91,62 @@ export const formSchema: FormSchema[] = [
     }
   },
   {
-    label: '基础路径',
+    label: 'Basic path',
     field: 'config.basePath',
     required: true,
     ifShow: ({ values }) => values.storage >= 10 && values.storage <= 12,
     component: 'Input'
   },
   {
-    label: '主机地址',
+    label: 'Host address',
     field: 'config.host',
     required: true,
     ifShow: ({ values }) => values.storage >= 11 && values.storage <= 12,
     component: 'Input'
   },
   {
-    label: '主机端口',
+    label: 'Host port',
     field: 'config.port',
     required: true,
     ifShow: ({ values }) => values.storage >= 11 && values.storage <= 12,
     component: 'Input'
   },
   {
-    label: '用户名',
+    label: 'username',
     field: 'config.username',
     required: true,
     ifShow: ({ values }) => values.storage >= 11 && values.storage <= 12,
     component: 'Input'
   },
   {
-    label: '密码',
+    label: 'password',
     field: 'config.password',
     required: true,
     ifShow: ({ values }) => values.storage >= 11 && values.storage <= 12,
     component: 'Input'
   },
   {
-    label: '连接模式',
+    label: 'Connection mode',
     field: 'config.basePath',
     required: true,
     ifShow: ({ values }) => values.storage === 11,
     component: 'Select',
     componentProps: {
       options: [
-        { lable: '主动模式', key: 'Active', value: 'Active' },
-        { lable: '被动模式', key: 'Passive', value: 'Passive' }
+        { lable: 'Active mode', key: 'Active', value: 'Active' },
+        { lable: 'Passive mode', key: 'Passive', value: 'Passive' }
       ]
     }
   },
   {
-    label: '节点地址',
+    label: 'Node address',
     field: 'config.endpoint',
     required: true,
     ifShow: ({ values }) => values.storage === 20,
     component: 'Input'
   },
   {
-    label: '存储 bucket',
+    label: 'storage bucket',
     field: 'config.bucket',
     required: true,
     ifShow: ({ values }) => values.storage === 20,
@@ -165,13 +165,13 @@ export const formSchema: FormSchema[] = [
     component: 'Input'
   },
   {
-    label: '自定义域名',
+    label: 'Custom domain name',
     field: 'config.domain',
     required: true,
     component: 'Input'
   },
   {
-    label: '备注',
+    label: 'Remark',
     field: 'remark',
     component: 'InputTextArea'
   }

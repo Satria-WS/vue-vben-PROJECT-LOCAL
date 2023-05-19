@@ -46,7 +46,7 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '名称',
+    label: 'name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
@@ -55,52 +55,52 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '编号',
+    label: 'serial number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '名称',
+    label: 'name',
     field: 'name',
     required: true,
     component: 'Input'
   },
   {
-    label: '微信号',
+    label: 'We chat number',
     field: 'account',
     helpMessage: '在微信公众平台（mp.weixin.qq.com）的菜单 [设置与开发 - 公众号设置 - 账号详情] 中能找到「微信号」',
     required: true,
     component: 'Input'
   },
   {
-    label: '公众号 appId',
+    label: 'No public appId',
     field: 'appId',
     helpMessage: '在微信公众平台（mp.weixin.qq.com）的菜单 [设置与开发 - 公众号设置 - 基本设置] 中能找到「开发者ID(AppID)」',
     required: true,
     component: 'Input'
   },
   {
-    label: '公众号 appSecret',
+    label: 'No public appSecret',
     field: 'appSecret',
     helpMessage: '在微信公众平台（mp.weixin.qq.com）的菜单 [设置与开发 - 公众号设置 - 基本设置] 中能找到「开发者密码(AppSecret)」',
     required: true,
     component: 'Input'
   },
   {
-    label: '公众号token',
+    label: 'Public account token',
     field: 'token',
     required: true,
     component: 'Input'
   },
   {
-    label: '消息加解密密钥',
+    label: 'Message plus dense key',
     field: 'aesKey',
     required: true,
     component: 'Input'
   },
   {
-    label: '备注',
+    label: 'Remark',
     field: 'remark',
     component: 'InputTextArea'
   }

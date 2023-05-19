@@ -40,13 +40,13 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '任务名称',
+    label: 'mission name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '任务状态',
+    label: 'Mission status',
     field: 'status',
     component: 'Select',
     componentProps: {
@@ -55,7 +55,7 @@ export const searchFormSchema: FormSchema[] = [
     colProps: { span: 8 }
   },
   {
-    label: '处理器的名字',
+    label: 'The name of the processor',
     field: 'handlerName',
     component: 'Input',
     colProps: { span: 8 }
@@ -64,37 +64,37 @@ export const searchFormSchema: FormSchema[] = [
 
 export const formSchema: FormSchema[] = [
   {
-    label: '任务编号',
+    label: 'Task number',
     field: 'id',
     show: false,
     component: 'Input'
   },
   {
-    label: '任务名称',
+    label: 'mission name',
     field: 'name',
     required: true,
     component: 'Input'
   },
   {
-    label: '处理器的名字',
+    label: 'The name of the processor',
     field: 'handlerName',
     required: true,
     dynamicDisabled: ({ values }) => !!values.id,
     component: 'Input'
   },
   {
-    label: '处理器的参数',
+    label: 'Parameters of the processor',
     field: 'handlerParam',
     component: 'Input'
   },
   {
-    label: 'CRON 表达式',
+    label: 'CRON expression',
     field: 'cronExpression',
     required: true,
     component: 'Input'
   },
   {
-    label: '重试次数',
+    label: 'number of retries',
     field: 'retryCount',
     required: true,
     helpMessage: '设置为 0 时，不进行重试',
@@ -102,7 +102,7 @@ export const formSchema: FormSchema[] = [
     component: 'InputNumber'
   },
   {
-    label: '重试间隔',
+    label: 'Repeated interval',
     field: 'retryInterval',
     required: true,
     helpMessage: '单位：毫秒。设置为 0 时，无需间隔',
@@ -111,7 +111,7 @@ export const formSchema: FormSchema[] = [
     suffix: '毫秒'
   },
   {
-    label: '监控超时时间',
+    label: 'Monitoring timeout time',
     field: 'monitorTimeout',
     component: 'Input',
     suffix: '毫秒'

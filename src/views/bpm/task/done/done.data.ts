@@ -64,13 +64,13 @@ export const columns: BasicColumn[] = [
 
 export const searchFormSchema: FormSchema[] = [
   {
-    label: '流程名',
+    label: 'Process name',
     field: 'name',
     component: 'Input',
     colProps: { span: 8 }
   },
   {
-    label: '创建时间',
+    label: 'Creation time',
     field: 'createTime',
     component: 'RangePicker',
     colProps: { span: 8 }

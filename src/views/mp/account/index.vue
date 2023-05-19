@@ -13,13 +13,13 @@
             :drop-down-actions="[
               {
                 icon: IconEnum.RESET,
-                label: '生成二维码',
+                label: 'Generate a two -dimensional code',
                 auth: 'mp:account:qr-code',
                 onClick: handleGenerateQrCode.bind(null, record)
               },
               {
                 icon: IconEnum.TEST,
-                label: '清空 API 配额',
+                label: 'Empty API quota',
                 auth: 'mp:account:clear-quota',
                 onClick: handleCleanQuota.bind(null, record)
               },
